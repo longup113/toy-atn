@@ -24,7 +24,7 @@ else
     <?php for( $i = 0 ; $i < $pages ; $i++ )
     {
       ?>
-      <a href="index1.php?page= <?= $i+1?>"
+      <a href="index.php?page= <?= $i+1?>"
       <?php
       if($curent_page==($i+1))
       {

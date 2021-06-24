@@ -7,7 +7,7 @@ include('inc/header.php');
 if($_SERVER['REQUEST_METHOD']=='GET'){
 	$id=$_GET['name'];
 	if(empty($SESSION['cart'][$id])){
-		$connt = mysqli_connect("localhost", "root","","stressworld");
+		$connt = mysqli_connect("18.218.33.185", "thanhadmin","511fEoN@","atntoy");
 		$q="SELECT * FROM product WHERE ID={$id}";
 		$rs = mysqli_query($connt, $q);
 		$product=mysqli_fetch_assoc($rs);
